@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+    
+    @layer components {
+        .navbar-active .hamburger div:first-child {
+        @apply rotate-45 translate-y-1.5;
+        }
+        .navbar-active .hamburger div:last-child {
+        @apply -rotate-45 -translate-y-1;
+        }
+        .navbar-active div:first-child div:first-child div:last-child{
+            @apply block lg:flex
+        }
+    }
+
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +38,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
