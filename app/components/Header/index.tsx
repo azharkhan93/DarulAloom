@@ -3,6 +3,8 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 const Header: React.FC = () => {
   return (
@@ -16,12 +18,14 @@ const Header: React.FC = () => {
                 <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0">
                   <input type="checkbox" name="toggle_nav" id="toggle_nav" className="peer hidden" />
                   <div className="w-full  flex justify-between md:w-max md:px-0 z-30 mix-blend-multiply">
-                    <a href="#" aria-label="logo" >
+                  <Link href='/'>
+                    {/* <a  aria-label="logo" > */}
                 {/* <Image src="/logo1.jpg" alt="tailus logo" width={144} height={68} className="w-36 dark:hidden" />  */}
                 <Image src="/logo3.jpg" alt="logo" width={80} height={10} className=" hidden dark:block  " />
                       {/* <img src="images/logo.svg" className="w-36 dark:hidden" alt="tailus logo" width="144" height="68" /> */}
                       {/* <img src="/logo1.jpg" className="w-36 hidden dark:block" alt="tailus logo" width="144" height="68" /> */}
-                    </a>
+                    {/* </a> */}
+                    </Link>
 
                     <div className="flex items-center md:hidden max-h-10">
                       <label role="button" htmlFor="toggle_nav" aria-label="humburger" id="hamburger" className="relative p-2 mt-11">
@@ -48,11 +52,13 @@ const Header: React.FC = () => {
                     <div className="block w-full md:w-max">
                       <ul className="gap-y-6 tracking-wide text-white font-medium flex flex-col md:flex-row md:gap-y-0">
                         <li>
-                          <a href="#" className="block md:px-4">
-                            <div className="relative text-green-600 before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:mx-auto before:mt-auto before:rounded-t-full before:bg-green-500">
-                              <span>Home</span>
-                            </div>
-                          </a>
+                        <Link href="/">
+          <span className="block md:px-4">
+            <div className="relative text-green-600 before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:mx-auto before:mt-auto before:rounded-t-full before:bg-green-500">
+              <span>Home</span>
+            </div>
+          </span>
+        </Link>
                         </li>
                         {/* <li>
                           <a href="#" className="block md:px-4 group">
@@ -62,19 +68,33 @@ const Header: React.FC = () => {
                           </a>
                         </li> */}
                         <li>
-                          <a href="#" className="block md:px-4 group">
+                          <Link href='/about-us'>
+                          <span  className="block md:px-4 group">
                             <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
                               <span className="group-hover:text-green-500">About</span>
                             </div>
-                          </a>
+                          </span>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#" className="block md:px-4 group">
+                        <Link href='/contact-us'>
+                          <span className="block md:px-4 group">
                             <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
                               <span className="group-hover:text-green-500">Contact</span>
                             </div>
-                          </a>
+                          </span>
+                          </Link>
                         </li>
+                        <li>
+                        <Link href='/contact-us'>
+                          <span className="block md:px-4 group">
+                            <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
+                              <span className="group-hover:text-green-500">Supportus</span>
+                            </div>
+                          </span>
+                          </Link>
+                        </li>
+                        
                       </ul>
                     </div>
 

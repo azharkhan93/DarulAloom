@@ -6,6 +6,7 @@
 
 import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -28,31 +29,44 @@ const Footer: React.FC = () => {
   
         {/* Navigation Section (Center) */}
         <div className="w-full md:w-1/3">
-          <h2 className="text-2xl font-bold mb-4 ml-20">Navigation</h2>
-          <ul className='ml-24'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+          <h2 className="text-2xl font-bold mb-4 lg:ml-20  md:flex md:space-x-">Navigation</h2>
+          <ul className='lg:ml-24  space-y-3 '>
+            <li>
+            <Link href="/">
+        <span>Home</span>
+      </Link>
+      {/* <a href="#">Home</a> */}
+      </li>
+      <li>
+      <Link href="/about-us">
+        <span>About</span>
+      </Link>
+    </li>
+    <li>
+      <Link href="/contact-us">
+        <span>Contact</span>
+      </Link>
+    </li>
+            {/* <li><a href="#">Contact</a></li> */}
           </ul>
           
         </div>
   
         {/* Contact Us Section (Right) */}
         <div className="w-full md:w-1/3 ">
-          <h2 className="text-2xl font-bold mb-4 ">Contact Us</h2>
+          <h2 className="text-2xl font-bold mb-4 mt-4 lg:mt-0">Contact Us</h2>
           <ul className='space-y-4' >
-            <li className='flex mt-2'>
+            <li className='flex mt-2 '>
               <FaPhoneAlt />
-              <span className="ml-2">123-456-7890</span>
+              <span className="ml-3">123-456-7890</span>
             </li>
             <li className='flex '>
               <FaEnvelope />
-              <span className="ml-2">info@example.com</span>
+              <span className="ml-3">info@example.com</span>
             </li >
             <li className='flex '>
               <FaMapMarkerAlt />
-              <span className="ml-2">123 Street, City, Country</span>
+              <span className="ml-3">123 Street, City, Country</span>
             </li>
           </ul>
         </div>

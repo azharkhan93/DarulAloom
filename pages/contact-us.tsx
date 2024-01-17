@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import  Social from '../app/components/Social/index'
+import  Map from '../app/components/Map/index'
 
 const  Contact = () => {
   return (
@@ -962,6 +963,7 @@ const  Contact = () => {
                     </div>
                 </div>
             </section>
+            <Map />
         </>
     );
 };
