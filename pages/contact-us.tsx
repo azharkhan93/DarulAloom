@@ -1,13 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import  Social from '../app/components/Social/index'
+import Image from 'next/image';
+// import  Social from '../app/components/Social/index'
 import  Map from '../app/components/Map/index'
 
 const  Contact = () => {
   return (
 
     <>
-    <Social />
+    <div className="relative w-full h-[400px] bg-cover bg-center bg-black">
+            <Image
+                src="/your-image.jpg" // Replace with your image path
+                alt="About Us Background"
+                layout="fill"
+                objectFit="cover"
+            />
+            <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
+                <h1 className="font-bold text-4xl mb-4">Contact Us</h1>
+                
+            </div>
+        </div>
+    {/* <Social /> */}
 
 
             <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
