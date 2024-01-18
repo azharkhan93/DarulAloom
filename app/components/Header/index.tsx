@@ -1,12 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 // Header.tsx
+"use client"
 
-import React from 'react';
+// import React from 'react';
+import React, { useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 
 const Header: React.FC = () => {
+  const closeNav = useCallback(() => {
+    const checkbox = document.getElementById('toggle_nav') as HTMLInputElement;
+    if (checkbox) {
+      checkbox.checked = false;
+    }
+  }, [])
   return (
     // <body className="bg-white dark:bg-gray-900">
     //   <div className="relative w-full overflow-hidden">
@@ -55,7 +63,7 @@ const Header: React.FC = () => {
                         <Link href="/">
           <span className="block md:px-4">
             <div className="relative text-green-600 before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:mx-auto before:mt-auto before:rounded-t-full before:bg-green-500">
-              <span>Home</span>
+              <span onClick={closeNav}>Home</span>
             </div>
           </span>
         </Link>
@@ -71,7 +79,7 @@ const Header: React.FC = () => {
                           <Link href='/about-us'>
                           <span  className="block md:px-4 group">
                             <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
-                              <span className="group-hover:text-green-500">About</span>
+                              <span className="group-hover:text-green-500" onClick={closeNav}>About</span>
                             </div>
                           </span>
                           </Link>
@@ -80,7 +88,7 @@ const Header: React.FC = () => {
                         <Link href='/contact-us'>
                           <span className="block md:px-4 group">
                             <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
-                              <span className="group-hover:text-green-500">Contact</span>
+                              <span className="group-hover:text-green-500" onClick={closeNav}>Contact</span>
                             </div>
                           </span>
                           </Link>
@@ -89,7 +97,7 @@ const Header: React.FC = () => {
                         <Link href='/contact-us'>
                           <span className="block md:px-4 group">
                             <div className="relative group before:absolute before:-bottom-2 md:before:-bottom-7 before:w-full before:h-0.5 before:origin-left before:mt-auto before:rounded-full before:bg-green-800 before:transition before:scale-x-0 group-hover:before:scale-x-100">
-                              <span className="group-hover:text-green-500">Supportus</span>
+                              <span className="group-hover:text-green-500" onClick={closeNav}>Supportus</span>
                             </div>
                           </span>
                           </Link>
