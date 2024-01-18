@@ -5,10 +5,10 @@
 
 const HeroSection = () => {
     return (
-      <div className="relative bg-gray-900 overflow-hidden h-[650px] ">
+      <div className="relative bg-gray-900 overflow-hidden h-[610px] ">
         {/* Background Image */}
         <img
-          src="/mad.webp" // Replace with your actual image source
+          src="/hero.jpeg" // Replace with your actual image source
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
   
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col items-start justify-center px-8 text-white">
+        <div className="absolute inset-0 flex flex-col items-start justify-center px-8 text-white top-10">
           {/* Divider */}
           <div className="w-24 h-px bg-white mb-4">
           
@@ -27,9 +27,15 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Dar Ul Uloom Srinagar</h1>
   
           {/* Tagline */}
-          <p className="text-lg md:text-xl mb-8">At Trust Darul Aloom, we believe in the transformative power of education.</p>
+          <p className="text-lg md:text-l mb-8 max-w-2xl mt-3">We are dedicated to providing a comprehensive and enriching educational experience in Islamic studies. Our esteemed faculty and well-rounded curriculum aim to instill not only a deep understanding of the Quran and Hadith but also foster critical thinking and character development.</p>
   
           {/* Additional Content (if needed) */}
+          <a
+          href="#registration"
+          className="bg-white text-blue-500 py-2 px-4 rounded-full font-semibold text-lg hover:bg-blue-700 hover:text-white transition duration-300"
+        >
+          Get Started
+        </a>
           {/* ... */}
   
         </div>

@@ -10,13 +10,17 @@ const  Contact = () => {
     <>
     <div className="relative w-full h-[400px] bg-cover bg-center bg-black">
             <Image
-                src="/your-image.jpg" // Replace with your image path
+                src="/child6.jpeg" // Replace with your image path
                 alt="About Us Background"
                 layout="fill"
                 objectFit="cover"
             />
             <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
-                <h1 className="font-bold text-4xl mb-4">Contact Us</h1>
+            <h1 className="font-bold text-4xl mb-4">
+    <span className="block w-24 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mt-2 mb-4"></span>
+        <span className="ml-6">Contact Us</span>
+        <span className="block w-24 h-0.5 bg-gradient-to-r from-black to-purple-500  mt-4"></span>
+    </h1>
                 
             </div>
         </div>
