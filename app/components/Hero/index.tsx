@@ -5,7 +5,7 @@
 
 const HeroSection = () => {
     return (
-      <div className="relative bg-gray-900 overflow-hidden h-[650px] mt-24">
+      <div className="relative bg-gray-900 overflow-hidden h-[650px] ">
         {/* Background Image */}
         <img
           src="/mad.webp" // Replace with your actual image source
