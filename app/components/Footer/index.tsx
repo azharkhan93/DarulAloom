@@ -10,8 +10,8 @@ import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white p-8">
-      <div className="flex flex-wrap">
+    <footer className="bg-gray-800   text-white lg:p-8">
+      <div className="flex flex-wrap ml-4">
         
         {/* About Company Section (Left) */}
         <div className="w-full md:w-1/3">

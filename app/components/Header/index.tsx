@@ -10,10 +10,10 @@ const Header: React.FC = () => {
   return (
     // <body className="bg-white dark:bg-gray-900">
     //   <div className="relative w-full overflow-hidden">
-        <header className=" top-0 z-40 sticky w-full flex justify-center">
+        <header className="  top-0 z-40 sticky w-full flex justify-center ">
           <nav className="absolute w-full  ">
             
-            <div className="relative z-30 bg-gradient-to-b from-white to-white">
+            <div className="relative z-30 bg-gradient-to-b from-white to-white overflow-hidden">
               <div className="container m-auto md:px-12 lg:py-0 ">
                 <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0">
                   <input type="checkbox" name="toggle_nav" id="toggle_nav" className="peer hidden" />
