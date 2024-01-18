@@ -6,27 +6,27 @@ import Image from 'next/image';
 const About1 = () => {
   return (
     <>
-    <div className="relative w-full h-[400px] bg-cover bg-center bg-black">
-            <Image
-                src="/child.webp" // Replace with your image path
-                alt="About Us Background"
-                layout="fill"
-                objectFit="cover"
-            />
-            <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
-    <h1 className="font-bold text-4xl mb-4">
-    <span className="block w-24 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mt-2 mb-4"></span>
-        <span className="ml-6">About Us</span>
-        <span className="block w-24 h-0.5 bg-gradient-to-r from-black to-purple-500  mt-4"></span>
-    </h1>
-</div>
+      <div className="relative w-full h-[400px] bg-cover bg-center bg-black">
+        <Image
+          src="/child.webp" // Replace with your image path
+          alt="About Us Background"
+          layout="fill"
+          objectFit="cover"
+        />
+        <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
+          <h1 className="font-bold text-4xl mb-4">
+            <span className="block w-24 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mt-2 mb-4"></span>
+            <span className="ml-6">About Us</span>
+            <span className="block w-24 h-0.5 bg-gradient-to-r from-black to-purple-500  mt-4"></span>
+          </h1>
+        </div>
 
-            {/* <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
+        {/* <div className="absolute top-1/2 left-10 transform -translate-y-1/2 text-white">
                 <h1 className="font-bold text-4xl mb-4">About Us</h1>
                 
             </div> */}
-        </div>
-    {/* <Social /> */}
+      </div>
+      {/* <Social /> */}
       <section className="overflow-hidden  pb-12 lg:-pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
@@ -35,14 +35,14 @@ const About1 = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                      src="/about1.jpeg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <img
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                      src="/about2.jpeg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -51,7 +51,7 @@ const About1 = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
                     <img
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                      src="about4.jpeg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
@@ -633,20 +633,16 @@ const About1 = () => {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
                 <span className="block mb-4 text-lg font-semibold text-primary">
-                  Why Choose Us
+                  Wh0 We Are
                 </span>
-                <h2 className="mb-5 text-3xl font-bold text-black  sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
+                <h2 className="mb-5 text-3xl font-bold text-black  sm:text-[25px]/[40px]">
+                Join us in our journey of compassion, education, and community, where we not only nurture academic excellence but also serve as a home for orphaned childrens, 
                 </h2>
-                <p className="mb-5 text-base text-black dark:text-dark-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                <p className="mb-5 text-base text-black ">
+                  Founded with a vision to propagate Islamic knowledge and nurture individuals in the light of profound wisdom, Darul Aloom has stood as a beacon of education for several decades. Established [Insert Year], our institution has embraced a rich heritage of fostering spiritual growth, intellectual curiosity, and a commitment to serving humanity.
                 </p>
-                <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                <p className="mb-8 text-base text-body-color ">
+                  Our holistic approach to education combines traditional Islamic studies with contemporary knowledge, creating an environment where students cultivate a deep understanding of their faith alongside critical thinking and leadership skills.
                 </p>
                 <a
                   href="javascript:void(0)"

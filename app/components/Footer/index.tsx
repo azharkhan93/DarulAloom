@@ -11,12 +11,12 @@ import Link from 'next/link';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800   text-white lg:p-8">
-      <div className="flex flex-wrap ml-4">
+      <div className="flex flex-wrap ml-2 lg:ml-4">
         
         {/* About Company Section (Left) */}
         <div className="w-full md:w-1/3">
-          <h2 className="text-2xl font-bold mb-4">About Us</h2>
-          <p>Your company description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Your company description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h2 className="text-2xl font-bold mb-2  mt-11 lg:mt-0">About Us</h2>
+          <p>we take pride in providing a comprehensive education rooted in the teachings of the Quran and Sunnah. Our esteemed faculty, consisting of scholars and educators, is dedicated to shaping well-rounded individuals who not only excel in their academic pursuits but also contribute meaningfully to society.</p>
           {/* Social Media Icons */}
           <div className="mt-4 flex">
           <hr className="my-4 border-green-600" />
