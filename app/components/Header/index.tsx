@@ -17,13 +17,13 @@ const Header: React.FC = () => {
   }, [])
   return (
 
-    <header className="  top-0 z-40 sticky w-full flex justify-center ">
-      <nav className="absolute w-full  ">
+    // <header className="  top-0 z-40 sticky w-full flex justify-center ">
+      <nav className=" top-0 z-40 sticky  w-full  ">
 
         <div className="relative z-30 bg-gradient-to-b from-gray-900 to-gray-900 ">
           <div className="container m-auto md:px-12 lg:py-0 ">
             <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0">
-              {/* <input type="checkbox" name="toggle_nav" id="toggle_nav" className="peer hidden" /> */}
+              <input type="checkbox" name="toggle_nav" id="toggle_nav" className="peer hidden" />
               <div className="w-full  flex justify-between md:w-max md:px-0 z-30 mix-blend-multiply">
                 <Link href='/'>
 
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
               className="container h-4 -mt-6 mx-auto bg-green-600/30 dark:bg-green-900/30 blur md:-mt-4"
             ></div> */}
       </nav>
-    </header>
+    // </header>
     //   </div>
     // </body>
   );
