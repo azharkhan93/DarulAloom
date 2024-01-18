@@ -18,7 +18,7 @@ const  Contact = () => {
                                 <span className="mb-4 block text-base font-semibold text-primary">
                                     Contact Us
                                 </span>
-                                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                <h2 className="mb-6 text-[32px] font-bold uppercase text-black sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                                     GET IN TOUCH WITH US
                                 </h2>
                                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
@@ -42,7 +42,7 @@ const  Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold text-black">
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
@@ -82,7 +82,7 @@ const  Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold text-black">
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
@@ -107,7 +107,7 @@ const  Contact = () => {
                                         </svg>
                                     </div>
                                     <div className="w-full">
-                                        <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                                        <h4 className="mb-1 text-xl font-bold text-black">
                                             Email Address
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
@@ -144,7 +144,7 @@ const  Contact = () => {
                                     <div>
                                         <button
                                             type="submit"
-                                            className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                                            className="w-full rounded border border-primary bg-gray-900 p-3 text-white transition hover:bg-opacity-90"
                                         >
                                             Send Message
                                         </button>

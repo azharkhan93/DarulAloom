@@ -19,13 +19,15 @@ const HeroSection = () => {
         {/* Content */}
         <div className="absolute inset-0 flex flex-col items-start justify-center px-8 text-white">
           {/* Divider */}
-          <div className="w-8 h-px bg-white mb-4"></div>
+          <div className="w-24 h-px bg-white mb-4">
+          
+          </div>
   
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Your Heading</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Dar Ul Uloom Srinagar</h1>
   
           {/* Tagline */}
-          <p className="text-lg md:text-xl mb-8">Your Tagline</p>
+          <p className="text-lg md:text-xl mb-8">At Trust Darul Aloom, we believe in the transformative power of education.</p>
   
           {/* Additional Content (if needed) */}
           {/* ... */}
