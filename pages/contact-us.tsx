@@ -27,8 +27,8 @@ const  Contact = () => {
     {/* <Social /> */}
 
 
-            <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
-                <div className="container">
+            <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px] ">
+                <div className="container ml-4 lg:ml-6">
                     <div className="-mx-4 flex flex-wrap lg:justify-between">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -135,7 +135,7 @@ const  Contact = () => {
                             </div>
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-                            <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+                            <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12 mr-[35px]">
                                 <form>
                                     <ContactInputBox
                                         type="text"
