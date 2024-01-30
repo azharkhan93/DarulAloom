@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 // components/KeyValues.js
 import React from 'react';
+import Image from 'next/image';
 
 const KeyValues = () => {
     return (
@@ -50,10 +51,20 @@ const KeyValues = () => {
                                 </dl>
                             </div>
                         </div>
-                        <img src="/un.png" alt="Product screenshot" className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442" />
+                        <div>
+      <Image
+        src="/un.png"
+        alt="Product screenshot"
+        className="lg:w-[900px]  lg:h-[500px]  lg:mt-24   h-[260px] rounded-xl shadow-xl ring-1 ring-gray-400/10  md:-ml-4 lg:ml-10"
+        width={500}
+        height={900}
+      />
+    </div>
+                        {/* <img src="/un.png" alt="Product screenshot" className="rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" /> */}
                     </div>
                 </div>
-            </div></>
+            </div>
+            </>
     );
 };
 
